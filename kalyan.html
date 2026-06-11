@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavan Kalyan Portfolio</title>
+
+    <link rel="stylesheet" href="kalyan.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2>Pavan Kalyan Penugonda</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button id="themeBtn" onclick="toggleMode()">Dark Mode</button>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div>
+        <img src="pavan.jpeg" alt="Profile" class="profile">
+
+        <h1>Hi, I am Penugonda Pavan Kalyan Susil Kumar</h1>
+
+        <p>Aspiring Full Stack Developer & Data Science Enthusiast</p>
+
+        <a href="pkresume.pdf" class="btn" download>
+            Download Resume
+        </a>
+    </div>
+</section>
+
+<section id="about">
+
+    <h2>About Me</h2>
+
+    <p>
+        I am a Computer Science Engineering student interested in
+        Full Stack Development, Data Science, AI and Software Engineering.
+    </p>
+
+    <div class="skills">
+        <span>C</span>
+        <span>Java</span>
+        <span>Python</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>Node.js</span>
+        <span>MongoDB</span>
+        <span>MySQL</span>
+    </div>
+
+</section>
+<section id="education">
+
+    <h2>Education</h2>
+
+    <div class="education-container">
+
+        <div class="education-card">
+            <h3>10th Class (SSC)</h3>
+            <p>School Name</p>
+            <p>Year: 2020</p>
+            <p>Percentage: 95%</p>
+
+            <a href="documents/10th_marks_memo.pdf" target="_blank">
+                View Certificate
+            </a>
+        </div>
+
+        <div class="education-card">
+            <h3>Intermediate (MPC)</h3>
+            <p>College Name</p>
+            <p>Year: 2022</p>
+            <p>Percentage: 92%</p>
+
+            <a href="documents/intermediate_marks_memo.pdf" target="_blank">
+                View Certificate
+            </a>
+        </div>
+
+        <div class="education-card">
+            <h3>B.Tech (CSE)</h3>
+            <p>Lakireddy Bali Reddy College of Engineering</p>
+            <p>Year: 2022 - 2026</p>
+            <p>CGPA: 8.5</p>
+
+            <a href="documents/btech_marks_memo.pdf" target="_blank">
+                View Certificate
+            </a>
+        </div>
+
+    </div>
+
+</section>
+<section id="certifications">
+
+    <h2>Certifications</h2>
+
+    <div class="certificate-container">
+
+        <div class="certificate-card">
+            <h3>Python Programming</h3>
+
+            <a href="documents/python_certificate.pdf"
+               target="_blank">
+               View Certificate
+            </a>
+        </div>
+
+        <div class="certificate-card">
+            <h3>Java Programming</h3>
+
+            <a href="documents/java_certificate.pdf"
+               target="_blank">
+               View Certificate
+            </a>
+        </div>
+
+        <div class="certificate-card">
+            <h3>Future Interns Internship</h3>
+
+            <a href="documents/internship_certificate.pdf"
+               target="_blank">
+               View Certificate
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="projects">
+
+    <h2>Projects</h2>
+
+    <div class="project-container">
+
+        <div class="card">
+            <div class="card-content">
+                <h3>Face Recognition Attendance System</h3>
+
+                <p>
+                    Developed an attendance management system using
+                    Python, OpenCV, and Face Recognition technology.
+                </p>
+
+                <p><strong>Technologies:</strong> Python, OpenCV</p>
+
+                <div class="project-links">
+                    <a href="#">GitHub</a>
+                    <a href="#">Live Demo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h3>Stock Portfolio Tracker</h3>
+
+                <p>
+                    Tracks stock investments and calculates
+                    total portfolio value.
+                </p>
+
+                <p><strong>Technologies:</strong> Python</p>
+
+                <div class="project-links">
+                    <a href="#">GitHub</a>
+                    <a href="#">Live Demo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h3>Rule Based Chatbot</h3>
+
+                <p>
+                    A simple chatbot that responds to predefined
+                    user inputs using conditional statements.
+                </p>
+
+                <p><strong>Technologies:</strong> Python</p>
+
+                <div class="project-links">
+                    <a href="#">GitHub</a>
+                    <a href="#">Live Demo</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <form onsubmit="sendMessage(event)">
+
+        <input type="text" placeholder="Name" required>
+
+        <input type="email" placeholder="Email" required>
+
+        <textarea placeholder="Message" rows="5"></textarea>
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+</section>
+
+<footer>
+    <p>© 2026 Pavan Kalyan</p>
+</footer>
+
+<script src="kalyan.js"></script>
+
+</body>
+</html>
